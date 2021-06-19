@@ -1,20 +1,28 @@
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+}
+
 body{
   background-image: url('../images/bg.jpg');
 	margin: 0px;
 	font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-size: cover;
   background-color: #352a3a;
   background-blend-mode: darken;
+
 }
  @font-face {
   font-family: font1;
-  src: url('demo.ttf');
+  src: url('../fonts/demo.ttf');
 }
 
  @font-face {
   font-family: font2;
-  src: url('bold.ttf');
+  src: url('../fonts/bold.ttf');
+
 }
 *{
   color: white;
@@ -92,14 +100,14 @@ body{
 .art1{
   flex: 4;
   padding-left: 100px;
-  font-size: 25px;
+  font-size: 30px;
   font-family: font2;
 
 }
 
 .art2{
   flex: 4;
-  padding-top: 50px;
+  padding-top: 30px;
   display: block;
 
 
@@ -147,4 +155,53 @@ button {
 
 .right a{
   padding-top: 15px;
+}
+
+
+
+#home{
+  width: 100%;
+  height: 100vh;
+}
+
+
+#news{
+  width: 100%;
+  height: 100vh;
+  /*padding-top: 2px;*/
+}
+
+section{
+  scroll-snap-align: center;
+
+}
+
+
+
+
+.main-body{
+  margin-top: 30px;
+  margin: 90px;
+  background-color: black;
+  background:rgba(0,0,0,0.5);
+
+  border-radius: 20px;
+
+}
+
+
+/* this is for the heading aka cybersecurity */
+.heading{
+  text-align: center;
+  font-size: 30px;
+  /*margin-bottom: 30px;*/
+}
+
+
+
+article{
+  padding: 10px 50px 50px 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+  height: 100vh;
 }
