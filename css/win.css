@@ -1,0 +1,207 @@
+.main-body{
+  padding-top: 60px;
+  /*margin-top: 50px;*/
+  margin: 0px 50px 50px 50px;
+
+  background-color: black;
+  background:rgba(0,0,0,0.5);
+
+  border-radius: 20px;
+  height: 100vh;
+
+}
+
+body{
+  background-image: url('../images/win.webp');
+  background-size: cover;
+  background-color: #352a3a;
+  background-blend-mode: darken;
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+
+}
+
+
+
+
+.heading{
+  text-align: center;
+  font-size: 30px;
+  /*margin-bottom: 30px;*/
+}
+
+
+
+.articles{
+
+  display: flex;
+}
+
+
+img{
+  /*creating 16:9 ratio*/
+  width: 700px;
+  height:400px;
+  margin: 10px;
+  margin-bottom: -10px;
+
+}
+
+.article{
+  display: flex;
+  padding-top: 50px;
+  padding-right: 10px;
+}
+
+*{
+  color: white;
+}
+
+section{
+  height: 100vh;
+}
+
+
+body{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  /*overflow: hidden;*/
+
+}
+ @font-face {
+  font-family: font1;
+  src: url('../fonts/demo.ttf');
+  color: #679a10 ;
+}
+
+ @font-face {
+  font-family: font2;
+  src: url('../fonts/bold.ttf');
+
+}
+
+
+* {box-sizing: border-box;}
+
+.title{
+  padding-top: 6px;
+}
+
+
+
+.nav{
+
+  display: flex;
+  height: 70px;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: #111927;
+
+}
+.left{
+  font-family: font1;
+  padding-left: 70px;
+  font-size: 10.5px;
+  flex: 2;
+  color: #f7f4e9;
+  padding-top:7px ;
+}
+.right{
+  padding-top: 25px;
+  padding-left: 10px;
+  display: flex;
+  flex: 1;
+  color: white;
+}
+
+
+/*.button-in-nav1{
+  margin-top: -10px;
+  margin-left: 500px;
+  background-color: #221d24;
+  width: 100px;
+  border-width: 0px;
+
+}*/
+
+.button-in-nav{
+  margin-top: -10px;
+  background-color: transparent;
+  background-blend-mode: lighten;
+  backface-visibility: 100%;
+  width: 100px;
+  border-width: 0px;
+  color: white;
+
+}
+.button-in-nav:hover{
+    border-bottom: 3.5px solid #4ad7d1;
+}
+
+.search{
+  height: 30px;
+  margin-top: 10px;
+  color: black;
+
+}
+
+.search1{
+  height: 32px;
+  margin-top: 9px;
+  color: black;
+}
+
+.article{
+  display: flex;
+  padding-top: 100px;
+  padding-right: 10px;
+}
+
+
+.art1{
+  flex: 4;
+  padding-left: 100px;
+  font-size: 30px;
+  font-family: font2;
+  color: white;
+
+}
+
+.art2{
+  flex: 4;
+  padding-top: 30px;
+  display: block;
+
+
+}
+
+
+.fav{
+  height: 300px;
+  width: 600px;
+}
+
+
+
+
+
+p{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 1px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 1px;
+  border-color: #221d24;
+  /*color: black;*/
+
+}
+
+#news{
+  padding-top: 100px;
+}

@@ -1,92 +1,86 @@
 /*These are the basic stuff copied from index page css*/
 body{
-  background-image: url('../images/bg.jpg');
 	margin: 0px;
 	font-family: Arial, Helvetica, sans-serif;
   /*overflow: hidden;*/
   background-size: cover;
-  background-color: #352a3a;
+  background-color: #141d2b;
   background-blend-mode: darken;
   color: white;
 }
- @font-face {
+@font-face {
   font-family: font1;
   src: url('../fonts/demo.ttf');
+  color: #679a10 ;
 }
 
  @font-face {
   font-family: font2;
   src: url('../fonts/bold.ttf');
-}
- @font-face {
-  font-family: font2;
-  src: url('../fonts/lato.ttf');
+
 }
 
-/*css for nav bar. Don't mess with this*/
+
+* {box-sizing: border-box;}
+
+.title{
+  padding-top: 6px;
+}
+
+button{
+  cursor: pointer;
+}
+
 .nav{
 
   display: flex;
   height: 70px;
   overflow: hidden;
   max-width: 100%;
+  background-color: #111927;
 
 }
 .left{
   font-family: font1;
   padding-left: 70px;
-  font-size: 14px;
+  font-size: 10.5px;
   flex: 2;
+  padding-top: 5px;
+  color: #f7f4e9;
 }
 .right{
   padding-top: 10px;
   padding-left: 10px;
   display: flex;
   flex: 1;
-
+  color: white;
 }
 
 
-}
-
-.buttons-in-nav{
-
+/*.button-in-nav1{
   margin-top: -10px;
-  background-color: transparent;
-  background-blend-mode: lighten;
+  margin-left: 500px;
+  background-color: #221d24;
   width: 100px;
   border-width: 0px;
-}
 
+}*/
 
-.right button{
-  margin-top: -10px;
+.button-in-nav{
+  padding-top: 14px;
   background-color: transparent;
   background-blend-mode: lighten;
+  backface-visibility: 100%;
   width: 100px;
   border-width: 0px;
-  cursor: pointer;
-}
-.title{
-  padding-top: 6px;
-  background-color: transparent;
-
-}
-
-button {
-  cursor: pointer;
-  border-radius: 1px;
-  border-color: #221d24;
   color: white;
+  height: 40px;
+  /*border-width: 10px ;*/
+  /*border-color: white;*/
 
 }
-/*serious stuff starts here*/
-
-
-/*a href ko underline hatako*/
-.right a{
-  text-decoration: none;
-  color: white;
+.button-in-nav:hover{
+    border-bottom: 3.5px solid #4ad7d1;
 }
 
 /*main para ma mathi gap chodeko */
@@ -98,6 +92,9 @@ button {
 
   border-radius: 20px;
 
+}
+a{
+  text-decoration: none;
 }
 
 
