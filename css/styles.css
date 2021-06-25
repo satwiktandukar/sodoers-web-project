@@ -78,9 +78,31 @@ body{
   color: white;
   cursor: pointer;
 }
+/*.contactus{
+  margin-top: -10px;
+  background-color: transparent;
+  background-blend-mode: lighten;
+  backface-visibility: 100%;
+  width: 100px;
+  border-width: 0px;
+  color: white;
+  cursor: pointer;
+}
+.contactus:hover{
+  background-color: #3cbcc3;
+  transition: transform .1s; 
+  color: white;
+  width: 120px;
+  height: 10px
+  border-width: 0px;
+  cursor: pointer;
+  margin-top: -5px;
 
+}*/
 .button-in-nav:hover{
     border-bottom: 3.5px solid #4ad7d1;
+    transform: scale(1.1);
+    transition: width .5s;
 }
 
 .search{
@@ -134,19 +156,22 @@ p{
   display: flex;
   margin: 0px;
   padding: 0px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
   font-weight: 1px;
 }
 
 button {
+  margin: 1px;
+
   cursor: pointer;
   border-radius: 1px;
   border-color: #221d24;
-  /*color: black;*/
+  border-width: 1px;
 
 }
 .pages button{
+  margin: 0px;
   text-align: center;
   width: 220px;
   height: 100px;
@@ -154,11 +179,25 @@ button {
   transition: transform .1s; 
   font-size: 15px;
   color: white;
+  border-width: 1px;
+  border-color: darkcyan;
+  border-radius: 10px;
 }
+
+
 
 .pages button:hover{
   transform: scale(1.1);
+
+  background-color: #3cbcc3;
+  border-width: 1px;
+  border-color: darkcyan;
+
+
+
 }
+
+
 .pages{
   display: inline-block;
 }
@@ -178,8 +217,8 @@ button {
   height: 100vh;
   background-size: cover;
   background-color: #141d2b;
-  background-blend-mode: lighten;
-  background-image: url('images/bg.jpg');
+/*  background-image: url('../images/ai.jpg');
+  background-blend-mode: color-dodge;*/
 
 
 
@@ -216,7 +255,9 @@ section{
   align-content: center;
 
 }
-
+.main-body p{
+  padding: 5px;
+}
 
 
 /* this is for the heading aka cybersecurity */
@@ -237,12 +278,12 @@ article{
 
 
 
-.nav button:hover{
-  /*transform: scale(1.0);*/
+/*.nav button:hover{
+  transform: scale(1.0);
   font-size: 14.5px;
 
 
-}
+}*/
 .articles{
 
   display: flex;
@@ -250,8 +291,8 @@ article{
 
 img{
   /*creating 16:9 ratio*/
-  width: 700px;
-  height:400px;
+  width: 500px;
+  height:300px;
   margin: 10px;
   margin-bottom: -10px;
 
@@ -273,17 +314,17 @@ img{
 }
 
 .news3 {
-  margin: 10px;
+  margin: 0px 25px 0px 0px;
   /*padding: 10px;*/
   background-color: #352a3a;
   background-blend-mode: darken;
   /*flex: 3;*/
   color: white;
   background:rgba(0,0,0,0.5);
-  /*border-radius: 20px;*/
+  border-radius: 20px;
   /*margin-top: 30px;*/
   width: 300px;
-  height: 400px;
+  height: 370px;
   transition: transform .2s;
   cursor: pointer;  
 
@@ -294,12 +335,46 @@ img{
 .main-body img{
   width: 280px;
   height: 200px;
+  border-radius: 20px;
 }
 
 .news-heading{
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .main-body a{
   text-decoration: none;
 }
+
+
+
+
+
+/*#aboutus{
+  display: block;
+  flex-direction: horizontal;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  text-align: center;
+
+  background-image: url('../images/news1.jpeg');
+  background-size: cover;
+  background-color: #141d2b;
+  background-blend-mode: darken;
+  color: white;
+}*/
+
+
+
+/*
+#contactus{
+  margin-top: 400px;
+  left: 0;
+  right: 0;
+  height: 15vh;
+  background-color: #111927;
+}*/
+
+
+

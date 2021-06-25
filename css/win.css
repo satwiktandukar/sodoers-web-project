@@ -44,6 +44,7 @@ img{
   height:400px;
   margin: 10px;
   margin-bottom: -10px;
+  border-radius: 6%;
 
 }
 
@@ -136,7 +137,8 @@ body{
 }
 .button-in-nav:hover{
     border-bottom: 3.5px solid #4ad7d1;
-}
+    transform: scale(1.1);
+    transition: width .5s;}
 
 .search{
   height: 30px;
@@ -189,7 +191,7 @@ p{
   display: flex;
   margin: 0px;
   padding: 0px;
-  font-size: 20px;
+  font-size: 26px;
   text-align: left;
   font-weight: 1px;
 }
