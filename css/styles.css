@@ -37,7 +37,7 @@ body{
 
 	display: flex;
 	height: 70px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	max-width: 100%;
   background-color: #111927;
 
@@ -102,7 +102,7 @@ body{
 .button-in-nav:hover{
     border-bottom: 3.5px solid #4ad7d1;
     transform: scale(1.1);
-    transition: width .5s;
+    transition: width 100s;
 }
 
 .search{
@@ -137,6 +137,7 @@ body{
 .art2{
   flex: 4;
   padding-top: 30px;
+  padding-right: 5px;
   display: block;
 
 
@@ -181,7 +182,7 @@ button {
   color: white;
   border-width: 1px;
   border-color: darkcyan;
-  border-radius: 10px;
+  /*border-radius:10px;*/
 }
 
 
@@ -190,7 +191,6 @@ button {
   transform: scale(1.1);
 
   background-color: #3cbcc3;
-  border-width: 1px;
   border-color: darkcyan;
 
 
@@ -216,9 +216,11 @@ button {
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: center;
   background-color: #141d2b;
-/*  background-image: url('../images/ai.jpg');
-  background-blend-mode: color-dodge;*/
+  /*background-image: url('../images/max.jpg');*/
+
+  background-blend-mode: darken;
 
 
 
@@ -375,6 +377,53 @@ img{
   height: 15vh;
   background-color: #111927;
 }*/
+
+
+.theme{
+  padding-top: 15px;
+  background-color: #111927;
+}
+.inside {
+  display: none;
+
+  margin-top: 21px;
+  /*position: absolute;*/
+  background-color: #111927;
+
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+}
+
+.theme:hover .inside {
+  display: block;
+}
+
+.inside button{
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  background-color: #111927;
+  color: white;
+  font-weight: normal;
+  padding: 0px;
+  border-width: 0px;
+  /*font-size: ;*/
+}
+
+
+.inside button:hover{
+  background-color:#141d2b ;
+}
+
+.trans{
+    transition:10s;
+
+}
+
+.dropdown {
+  width:  200px;
+}
+
 
 
 
