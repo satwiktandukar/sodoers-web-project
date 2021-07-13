@@ -25,6 +25,12 @@ body{
 
 .title{
   padding-top: 6px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.left a{
+  text-decoration: none;
 }
 
 button{
@@ -195,4 +201,14 @@ ul{
 
 .dropdown {
   width:  200px;
+}
+
+
+#trans{
+  border-bottom: 3.5px solid transparent;
+
+}
+#trans:hover{
+  border-bottom: 3.5px solid #3cbcc3;
+
 }

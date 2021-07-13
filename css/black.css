@@ -29,12 +29,6 @@ body{
 
 .title{
 	padding-top: 6px;
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
-.left a{
-  text-decoration: none;
 }
 
 
@@ -45,7 +39,7 @@ body{
 	height: 70px;
 	/*overflow: hidden;*/
 	max-width: 100%;
-  background-color: #111927;
+  background-color: #000000;
 
 }
 .left{
@@ -83,7 +77,6 @@ body{
   border-width: 0px;
   color: white;
   cursor: pointer;
-  transition: width 2s;
 }
 /*.contactus{
   margin-top: -10px;
@@ -108,9 +101,8 @@ body{
 }*/
 .button-in-nav:hover{
     border-bottom: 3.5px solid #4ad7d1;
-    /*transform: scale(1.1);*/
+    transform: scale(1.1);
     transition: width 100s;
-    width: 200px;
 }
 
 .search{
@@ -134,65 +126,14 @@ body{
 
 
 .art1{
-  display: inline-flex;
   flex: 4;
+  padding-left: 100px;
   font-size: 30px;
   font-family: font2;
   color: white;
-  overflow: auto;
-  white-space: nowrap;
-  overflow: hidden;
-  scroll-behavior: smooth;
 
 }
 
-#ar1{
-  padding-left: 100px;
-  height: 200px;
-
-}
-#ar2{
-  margin-left: 200px;
-  padding-right: 400px;
-  padding-left: 30px;
-  display: flex;
-}
-.right_button{
-  padding-left: 30px;
-
-
-}
-.right_but{
-  margin: 155px 50px 0px 0px;
-  height: 80px;
-  padding-bottom: 11px;
-  border-width: 0px;
-  width: 30px;
-  background-color: transparent;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: font2;
-
-}
-.left-button{
-  padding-top: 100px;
-
-}
-.left_but{
-  margin:155px 50px 0px 0px;
-  height: 80px;
-  padding-bottom: 11px;
-  border-width: 0px;
-  width: 30px;
-  background-color: transparent;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: font2;
-
-}
-.left_but:hover,.right_but:hover{
-  /*background-color: #111927;*/
-}
 .art2{
   flex: 4;
   padding-top: 30px;
@@ -235,26 +176,27 @@ button {
   text-align: center;
   width: 220px;
   height: 100px;
-  background-color: #3cbcc3;
-  transition: transform .3s; 
+  background-color: #00ffff;
+  transition: transform .1s; 
   font-size: 15px;
   color: white;
   border-width: 1px;
   border-color: darkcyan;
-  border-radius:5px;
+  /*border-radius:10px;*/
 }
 
 
 
 .pages button:hover{
   transform: scale(1.1);
-  border-radius: 9px;
-  background-color: #3cbcc3;
+
+  background-color: #00ffff;
   border-color: darkcyan;
 
 
 
 }
+
 
 .pages{
   display: inline-block;
@@ -275,7 +217,7 @@ button {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-color: #141d2b;
+  background-color: #000000;
   /*background-image: url('../images/max.jpg');*/
 
   background-blend-mode: darken;
@@ -361,7 +303,7 @@ img{
 .news {
   background-image: url('../images/news1.jpeg');
   background-size: cover;
-  background-color: #141d2b;
+  background-color: #000000;
   background-blend-mode: darken;
   color: white;
 }
@@ -376,7 +318,7 @@ img{
 .news3 {
   margin: 0px 25px 0px 0px;
   /*padding: 10px;*/
-  background-color: #352a3a;
+  background-color: #000000;
   background-blend-mode: darken;
   /*flex: 3;*/
   color: white;
@@ -439,14 +381,14 @@ img{
 
 .theme{
   padding-top: 15px;
-  background-color: #111927;
-
+  background-color: transparent;
 }
 .inside {
   display: none;
 
-  margin-top: 16px;
-  background-color: #111927;
+  margin-top: 21px;
+  /*position: absolute;*/
+  background-color: #00ffff;
 
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
@@ -460,7 +402,7 @@ img{
   text-align: center;
   width: 100px;
   height: 40px;
-  background-color: #111927;
+  background-color: #00ffff;
   color: white;
   font-weight: normal;
   padding: 0px;
@@ -470,17 +412,11 @@ img{
 
 
 .inside button:hover{
-  background-color:#141d2b ;
-  border-bottom: 3.5px solid #3cbcc3;
-
+  background-color:#00ffff ;
 }
 
-#trans{
-  border-bottom: 3.5px solid transparent;
-
-}
-#trans:hover{
-  border-bottom: 3.5px solid #3cbcc3;
+.trans{
+    transition:10s;
 
 }
 
