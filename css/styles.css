@@ -4,12 +4,15 @@ html{
 
 }
 
-
+*{
+  color: white; 
+}
 
 body{
+  /*overflow: hidden;*/
 	margin: 0px;
 	font-family: Arial, Helvetica, sans-serif;
-  /*overflow: hidden;*/
+
 
 }
  @font-face {
@@ -28,10 +31,11 @@ body{
 * {box-sizing: border-box;}
 
 .title{
-	padding-top: 6px;
+	padding-bottom: 1px;
   cursor: pointer;
   color: white;
   text-decoration: none;
+  font-size: 2em;
 }
 .left a{
   text-decoration: none;
@@ -65,16 +69,10 @@ body{
 }
 
 
-/*.button-in-nav1{
-	margin-top: -10px;
-	margin-left: 500px;
-  background-color: #221d24;
-  width: 100px;
-  border-width: 0px;
 
-}*/
 
 .button-in-nav{
+  position: relative;
 	margin-top: -10px;
   background-color: transparent;
   background-blend-mode: lighten;
@@ -83,49 +81,31 @@ body{
   border-width: 0px;
   color: white;
   cursor: pointer;
-  transition: width 2s;
 }
-/*.contactus{
-  margin-top: -10px;
-  background-color: transparent;
-  background-blend-mode: lighten;
-  backface-visibility: 100%;
-  width: 100px;
-  border-width: 0px;
-  color: white;
-  cursor: pointer;
-}
-.contactus:hover{
+
+
+.button-in-nav::after{
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  margin-bottom: -4px;
+  height: 3px;  
   background-color: #3cbcc3;
-  transition: transform .1s; 
-  color: white;
-  width: 120px;
-  height: 10px
-  border-width: 0px;
-  cursor: pointer;
-  margin-top: -5px;
 
-}*/
-.button-in-nav:hover{
-    border-bottom: 3.5px solid #4ad7d1;
-    /*transform: scale(1.1);*/
-    transition: width 100s;
-    width: 200px;
+  left: 0;
+  bottom: 0;
 }
-
-.search{
-  height: 30px;
-  margin-top: 10px;
-  color: black;
+.button-in-nav::after{
+  transform: scale(0,1);
+  transition: transform 0.5s ease;
+  transform-origin: center;
 
 }
+.button-in-nav:hover::after{
+  transform: scale(1,1);
 
-.search1{
-  height: 32px;
-  margin-top: 9px;
-  color: black;
 }
-
 .article{
   display: flex;
   padding-top: 100px;
@@ -138,7 +118,7 @@ body{
   flex: 4;
   font-size: 30px;
   font-family: font2;
-  color: white;
+  /*color: white;*/
   overflow: auto;
   white-space: nowrap;
   overflow: hidden;
@@ -148,7 +128,7 @@ body{
 
 #ar1{
   padding-left: 100px;
-  height: 200px;
+  height: 100%;
 
 }
 #ar2{
@@ -161,6 +141,7 @@ body{
   padding-left: 30px;
 
 
+
 }
 .right_but{
   margin: 155px 50px 0px 0px;
@@ -171,7 +152,7 @@ body{
   background-color: transparent;
   font-size: 35px;
   font-weight: bold;
-  font-family: font2;
+  font-family: font1;
 
 }
 .left-button{
@@ -189,8 +170,10 @@ body{
   font-weight: bold;
   font-family: font2;
 
+
 }
 .left_but:hover,.right_but:hover{
+
   /*background-color: #111927;*/
 }
 .art2{
@@ -447,8 +430,6 @@ img{
 
   margin-top: 16px;
   background-color: #111927;
-
-  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
 }
 
@@ -457,6 +438,7 @@ img{
 }
 
 .inside button{
+  position: relative;
   text-align: center;
   width: 100px;
   height: 40px;
@@ -469,20 +451,8 @@ img{
 }
 
 
-.inside button:hover{
-  background-color:#141d2b ;
-  border-bottom: 3.5px solid #3cbcc3;
 
-}
 
-#trans{
-  border-bottom: 3.5px solid transparent;
-
-}
-#trans:hover{
-  border-bottom: 3.5px solid #3cbcc3;
-
-}
 
 .dropdown {
   width:  200px;
@@ -491,3 +461,27 @@ img{
 
 
 
+.dropdown::after{
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  margin-top: -2px;
+  height: 3px;  
+  background-color: #3cbcc3;
+
+  left: 0;
+  bottom: 0;
+}
+.dropdown::after{
+  margin-bottom: -2px;
+
+  transform: scale(0,1);
+  transition: transform 0.5s ease;
+  transform-origin: center;
+
+}
+.dropdown:hover::after{
+  transform: scale(1,1);
+
+}

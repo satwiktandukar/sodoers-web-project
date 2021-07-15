@@ -24,23 +24,23 @@ body{
 * {box-sizing: border-box;}
 
 .title{
-  padding-top: 6px;
+  padding-top: 4.5px;
   cursor: pointer;
   color: white;
   text-decoration: none;
+  font-size: 2em;
 }
 .left a{
   text-decoration: none;
 }
 
-button{
-  cursor: pointer;
-}
+
 
 .nav{
 
   display: flex;
   height: 70px;
+  /*overflow: hidden;*/
   max-width: 100%;
   background-color: #111927;
 
@@ -48,9 +48,9 @@ button{
 .left{
   font-family: font1;
   padding-left: 70px;
-  font-size: 10.5px;
+  font-size: 14px;
   flex: 2;
-  padding-top: 5px;
+  padding-top: 3px;
   color: #f7f4e9;
 }
 .right{
@@ -62,36 +62,52 @@ button{
 }
 
 
-/*.button-in-nav1{
-  margin-top: -10px;
-  margin-left: 500px;
-  background-color: #221d24;
-  width: 100px;
-  border-width: 0px;
-
-}*/
-
 .button-in-nav{
-  padding-top: 14px;
+  position: relative;
+  margin-top: -10px;
   background-color: transparent;
   background-blend-mode: lighten;
   backface-visibility: 100%;
   width: 100px;
   border-width: 0px;
   color: white;
-  height: 40px;
-  /*border-width: 10px ;*/
-  /*border-color: white;*/
+  cursor: pointer;
+}
+
+
+.button-in-nav::after{
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  margin-bottom: -4px;
+  height: 3px;  
+  background-color: #3cbcc3;
+
+  left: 0;
+  bottom: 0;
+}
+.button-in-nav::after{
+  transform: scale(0,1);
+  transition: transform 0.5s ease;
+  transform-origin: center;
 
 }
-.button-in-nav:hover{
-    border-bottom: 3.5px solid #4ad7d1;
+.button-in-nav:hover::after{
+  transform: scale(1,1);
+
 }
+
+
+.right a{
+  padding-top: 15px;
+}
+
 
 /*main para ma mathi gap chodeko */
 .main-body{
   /*padding-top: 150px;*/
-  margin: 60px;
+  margin: 60px 60px 0px 60px ;
   background-color: black;
   background:rgba(0,0,0,0.5);
 
@@ -113,7 +129,7 @@ a{
 
 
 article{
-  padding: 50px;
+  padding: 15px 50px 10px 50px;
   font-family: sans-serif;
   font-size: 18px;
 }
@@ -137,8 +153,8 @@ iframe{
 }
 
 img{
-  width: 800px;
-  height:450px;
+  width: 40px;
+  height:40px;
 
 
 }
@@ -161,16 +177,15 @@ ul{
 
 
 .theme{
+  padding-top: 15px;
   background-color: #111927;
+
 }
 .inside {
   display: none;
 
-  margin-top: 21px;
-  /*position: absolute;*/
+  margin-top: 16px;
   background-color: #111927;
-
-  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
   z-index: 1;
 }
 
@@ -179,6 +194,7 @@ ul{
 }
 
 .inside button{
+  position: relative;
   text-align: center;
   width: 100px;
   height: 40px;
@@ -191,23 +207,57 @@ ul{
 }
 
 
-.inside button:hover{
-  background-color:#141d2b ;
-}
 
-.trans{
-    transition:10s;
 
-}
 
 .dropdown {
   width:  200px;
 }
-#trans{
-  border-bottom: 3.5px solid transparent;
+
+
+
+
+.dropdown::after{
+  content: '';
+  position: absolute;
+
+  width: 100%;
+  margin-top: -2px;
+  height: 3px;  
+  background-color: #3cbcc3;
+
+  left: 0;
+  bottom: 0;
+}
+.dropdown::after{
+  transform: scale(0,1);
+  transition: transform 0.5s ease;
+  transform-origin: center;
 
 }
-#trans:hover{
-  border-bottom: 3.5px solid #3cbcc3;
+.dropdown:hover::after{
+  transform: scale(1,1);
+
+}
+
+
+
+.images{
+  padding-left: 380px;
+  padding-top: 40px;
+}
+
+p img{
+  margin: 10px 10px 0px 10px;
+}
+
+
+button {
+  margin: 1px;
+
+  cursor: pointer;
+  border-radius: 1px;
+  border-color: #221d24;
+  border-width: 1px;
 
 }
