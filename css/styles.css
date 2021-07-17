@@ -208,9 +208,9 @@ button {
   margin: 1px;
 
   cursor: pointer;
-  border-radius: 1px;
-  border-color: #221d24;
-  border-width: 1px;
+  /*border-radius: 1px;*/
+  /*border-color: #221d24;*/
+  /*border-width: 1px;*/
 
 }
 .pages button{
@@ -222,18 +222,17 @@ button {
   transition: transform .3s; 
   font-size: 15px;
   color: white;
-  border-width: 1px;
   border-color: darkcyan;
-  border-radius:5px;
+  border: 1px  solid #141d2b;
 }
 
 
 
 .pages button:hover{
   transform: scale(1.1);
-  border-radius: 9px;
-  background-color: #3cbcc3;
-  border-color: darkcyan;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  /*border-color: darkcyan;*/
 
 
 
@@ -483,5 +482,22 @@ img{
 }
 .dropdown:hover::after{
   transform: scale(1,1);
+
+}
+
+.top_left{
+  border-radius: 20px 0px 0px 0px;
+
+}
+.top_right{
+  border-radius: 0px 20px 0px 0px;
+
+}
+.bottom_left{
+  border-radius: 0px 0px 0px 20px;
+
+}
+.bottom_right{
+  border-radius: 0px 0px 20px 0px;
 
 }
