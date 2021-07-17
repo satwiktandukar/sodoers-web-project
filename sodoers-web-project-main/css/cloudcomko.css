@@ -1,0 +1,168 @@
+/*These are the basic stuff copied from index page css*/
+body{
+  background-image: url('../images/bg.jpg');
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+  /*overflow: hidden;*/
+  background-size: cover;
+  background-color: #352a3a;
+  background-blend-mode: darken;
+  color: white;
+}
+ @font-face {
+  font-family: font1;
+  src: url('../fonts/demo.ttf');
+}
+
+ @font-face {
+  font-family: font2;
+  src: url('../fonts/bold.ttf');
+}
+ @font-face {
+  font-family: font2;
+  src: url('../fonts/lato.ttf');
+}
+
+/*css for nav bar. Don't mess with this*/
+.nav{
+
+  display: flex;
+  height: 70px;
+  overflow: hidden;
+  max-width: 100%;
+
+}
+.left{
+  font-family: font1;
+  padding-left: 70px;
+  font-size: 14px;
+  flex: 2;
+}
+.right{
+  padding-top: 10px;
+  padding-right: 20px;
+  display: flex;
+  flex: 1.5;
+  
+}
+.butt-in-air{
+  list-style: none;
+}
+
+.butt-in-air li{
+  display: inline-block;
+
+}
+.butt-in-air li a{
+  transition: all 0.4s;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 18px;
+  font-family: Source Sans Pro;
+  padding: 0px 15px;
+  color: white;
+
+}
+.finky::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3DCFD3;
+  transition: width .3s;
+}
+.finky:hover:after{
+  width: 110%;
+  transition:width .3s;
+}
+.butt-in-air li a:hover{
+ color: #3DCFD3;
+}
+.title{
+  padding-top: 6px;
+  background-color: transparent;
+
+}
+
+/*button {
+  cursor: pointer;
+  border-radius: 1px;
+  border-color: #221d24;
+  color: white;*/
+
+}
+/*serious stuff starts here*/
+
+
+/*a href ko underline hatako*/
+.right a{
+  text-decoration: none;
+  color: white;
+}
+
+/*main para ma mathi gap chodeko */
+.main-body{
+  /*padding-top: 150px;*/
+  margin: 90px;
+  background-color: black;
+  background:rgba(0,0,0,0.5);
+
+  border-radius: 20px;
+
+}
+
+
+/* this is for the heading aka cybersecurity */
+.heading{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+
+
+article{
+  padding: 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+
+
+p{
+  margin-left: 20px;
+  text-indent: 50px;
+}
+
+iframe{
+  /*creating 16:9 ratio*/
+  width: 800px;
+  height:450px;
+
+}
+.video{
+  text-align: center;
+}
+
+img{
+  width: 800px;
+  height:450px;
+
+
+}
+
+.img{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+hr{
+  size: 4;
+  background-color: white;
+}
+
+
+ul{
+  color: purple;
+  font-size: 15px;
+}
