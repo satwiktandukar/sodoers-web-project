@@ -49,7 +49,7 @@ body{
 	height: 70px;
 	/*overflow: hidden;*/
 	max-width: 100%;
-  background-color: #111927;
+  background-color: rgba(17, 24, 38, 0.7);
 
 }
 .left{
@@ -258,7 +258,7 @@ button {
   background-size: cover;
   background-position: center;
   background-color: #141d2b;
-  /*background-image: url('../images/max.jpg');*/
+  background-image: url('../images/bg1.jpg');
 
   background-blend-mode: darken;
 
