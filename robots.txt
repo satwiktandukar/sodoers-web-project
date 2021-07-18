@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow:	/css/*
+Allow:	/html/*
+Allow:	/index.html
+Disallow: /images/*
+Disallow: /pdfs/*
+Disallow: /fonts/*
+
