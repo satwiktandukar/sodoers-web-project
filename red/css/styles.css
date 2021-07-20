@@ -19,6 +19,7 @@ body{
   font-family: font1;
   src: url('../fonts/demo.ttf');
   color: #679a10 ;
+
 }
 
  @font-face {
@@ -225,7 +226,6 @@ button {
   height: 100px;
   background-color: rgba(150, 6, 64, 0.7);
   padding: 0.25rem 1rem;
-  text-shadow:; 
   box-shadow: inset 0 0 0.5em 0 rgba(255, 0, 0), 0 0 0.5em 0 rgba(255, 0, 0);
   transition: transform 0.3s; 
   font-size: 15px;
@@ -357,22 +357,28 @@ img{
 
 .news3:hover{
   transform: scale(1.1);
+  background-color: red;
 }
 
 .news3 {
   margin: 0px 25px 0px 0px;
   /*padding: 10px;*/
-  background-color: #352a3a;
+  background-color: rgba(255, 0, 0, 0.2);
   background-blend-mode: darken;
   /*flex: 3;*/
   color: white;
-  background:rgba(0,0,0,0.5);
   border-radius: 20px;
   /*margin-top: 30px;*/
   width: 300px;
   height: 370px;
   transition: transform .2s;
   cursor: pointer;  
+
+
+  box-shadow: inset 0 0 0.5em 0 red, 0 0 0.5em 0 red;
+
+  border-color: red 0.125em solid;
+  border: 1px  solid #141d2b;
 
 }
 
