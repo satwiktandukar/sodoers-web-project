@@ -173,6 +173,7 @@ input{
   height: 30px;
   border-radius: 5px;
   border-width: 0px;
+  padding-left: 10px;
 }
 
 
@@ -181,6 +182,7 @@ textarea{
   width: 400px;
   border-radius: 5px;
   border-width: 0px;
+  padding-left: 10px;
 
 }
 
