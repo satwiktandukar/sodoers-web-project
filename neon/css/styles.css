@@ -438,7 +438,7 @@ img{
   display: none;
 
   margin-top: 16px;
-  background-color: #111927;
+  background-color: transparent;
   z-index: 1;
 }
 
@@ -451,7 +451,7 @@ img{
   text-align: center;
   width: 100px;
   height: 40px;
-  background-color: #111927;
+  background-color: transparent;
   color: white;
   font-weight: normal;
   padding: 0px;
